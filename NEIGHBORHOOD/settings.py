@@ -97,9 +97,8 @@ WSGI_APPLICATION = 'NEIGHBORHOOD.wsgi.application'
 #         # 'PORT': '6907',
 #     }
 # }
-DATABASE_URL = os.getenv('DATABASE_URL')
 DATABASES = {
-    'default': dj_database_url.config(),
+    'default': dj_database_url.config(os.getenv('DATABASE_URL')),
 }
 
 CSRF_TRUSTED_ORIGINS = [
