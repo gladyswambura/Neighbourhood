@@ -98,7 +98,7 @@ WSGI_APPLICATION = 'NEIGHBORHOOD.wsgi.application'
 #     }
 # }
 DATABASES = {
-    'default':dj_database_url.parse(os.environ.get('NEIGHBORHOOD_DATABASE_URL'))
+    'default':dj_database_url.parse(os.environ.get('DATABASE_URL'))
  }
 
 CSRF_TRUSTED_ORIGINS = [
