@@ -21,7 +21,7 @@ keyring==5.7.1
 markdown2==2.4.8
 psycopg2-binary==2.9.6
 pycodestyle==2.10.0
-python-dotenv==1.0.0
+python-dotenv==0.21.1
 six==1.16.0
 soupsieve==2.4
 sqlparse==0.4.3
