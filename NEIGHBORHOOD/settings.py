@@ -97,9 +97,10 @@ WSGI_APPLICATION = 'NEIGHBORHOOD.wsgi.application'
 #         # 'PORT': '6907',
 #     }
 # }
+DATABASE_URL = os.getenv('DATABASE_URL')
 DATABASES = {
-    'default':dj_database_url.parse(os.environ.get('DATABASE_URL'))
- }
+    'default': dj_database_url.config(),
+}
 
 CSRF_TRUSTED_ORIGINS = [
     'https://neighborhood.onrender.com/'
